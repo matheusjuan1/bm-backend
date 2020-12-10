@@ -1,8 +1,11 @@
 {
   "name": "API-BM",
   "version": "1.0.0",
+  "engines": {
+    "node": "12"
+  },
   "description": "",
-  "main": "index.js",
+  "main": "node server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
