@@ -11,7 +11,7 @@ class Dash {
         return db.query(sql);
     }
     allHistoryByFK (idfunc) {
-        const sql = `SELECT idhistorico,urls,datahora,titulo FROM historico,maquina,funcionario where fkmaquina = idmaquina and fkfuncionario= idfuncionario and idfuncionario= ${idfunc}`;
+        const sql = `SELECT nome,idhistorico,urls,datahora,titulo FROM historico,maquina,funcionario where fkmaquina = idmaquina and fkfuncionario= idfuncionario and idfuncionario= ${idfunc}`;
         return db.query(sql);
     }
 }
